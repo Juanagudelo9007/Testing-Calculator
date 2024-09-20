@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    display: grid;
+    background-color: #ccc;
+    font-family: "Mochiy Pop One", sans-serif;
+    color: #9e9a9a;
+    place-items: center;
+}
+
+.calculator{
+    display: grid;
+    grid-template-columns:  repeat(4, 1fr);
+    border: 1px solid black;
+    margin-top: 150px;
+    width: 260px;
+    gap: 10px;
+    padding: 10px 10px;
+    border-radius: 12px;
+    background-color: black;
+    color: white;
+}
+
+.screen{
+    grid-column: 1/5;
+    text-align: right;
+    font-size: 2.5rem;
+    padding: 15px 5px;
+    background-color: black;
+    color: white; 
+    border-radius: 10px;
+  
+    
+}
+
+.btn{
+    padding: 5px 5px;
+    border-radius: 50px;
+    font-size: 2rem;
+    text-align: center;
+    cursor: pointer;
+    background-color:  rgb(51, 51, 51);
+    color: white;
+}
+
+.btn:hover{
+    background-color: rgb(120,120,120);    
+}
+
+
+#equals{
+    grid-row: span 2;
+    background-color: orange;
+}
+
+#zero {
+    grid-column: span 2;
+}
+
+#mas{
+    background-color: orange;
+}
+
+#menos{
+    background-color: orange;
+}
+
+#por{
+    background-color: orange;
+}
+
+#por:hover{
+    background-color: rgb(238, 205, 143);
+}
+
+#menos:hover{
+    background-color: rgb(238, 205, 143);
+}
+
+#equals:hover{
+    background-color: rgb(238, 205, 143);
+}
+
+#mas:hover{
+    background-color: rgb(238, 205, 143);
+}
